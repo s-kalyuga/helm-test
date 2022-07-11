@@ -64,6 +64,14 @@ resources:
      cpu: 100m
      memory: 128Mi
 
+pv:
+  storage: 1Gi
+  nfs:
+    path: /mnt/IT-Academy/nfs-data/sa2-20-22/Siarhei_Kaliuha
+    server: 192.168.37.105
+pvc:
+  storage: 1Gi
+
 autoscaling:
   enabled: false
   minReplicas: 1
